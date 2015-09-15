@@ -61,3 +61,40 @@ function squareAge (value,index) {
 
 housemates.map(squareAge);
 
+//Simple calculator created that respond to the commands provided
+
+
+function operationMaker (operation){
+  
+  if (operation=="add") {
+       return function (num1,num2){
+          return num1+num2;
+        } 
+
+  }
+  
+  if (operation == "sub") {
+        return function  (num1,num2){
+          return num1-num2;
+        } 
+  }
+  
+  if (operation == "mult") {
+        return function  (num1,num2){
+          return num1*num2;
+        } 
+  }
+    
+  if (operation == "div") {
+        return function  (num1,num2){
+          return num1/num2;
+        } 
+  }
+     
+}
+
+var adder = operationMaker("add");
+var sum = adder(5, 10); //15
+
+var multiplier = operationMaker("mult");
+var product = multiplier(5, 10); // 50
