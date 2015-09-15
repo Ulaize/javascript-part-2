@@ -14,4 +14,26 @@ yourArray.sort(sortLongestString);
 
 
 
+//Sort address book by name length.
+
+var emails = [
+  { name: 'Ulaize', email: "ulaize@email.com" },
+  { name: 'David', email: "david@email.com" },
+  { name: 'Maraie Hellene', email: "mariehellene@email.com" },
+
+];
+
+function emailOrdering (a, b) {
+  if ( b.name.length < a.name.length ) {
+    return 1;
+  }
+  if (a.name.length > b.name.length) {
+    return -1;
+  }
+  return 0;
+};
+
+emails.sort(emailOrdering);
+
+
 
