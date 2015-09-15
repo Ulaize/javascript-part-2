@@ -35,5 +35,15 @@ function emailOrdering (a, b) {
 
 emails.sort(emailOrdering);
 
+//function that returns the square of a number.
 
+var someNum = [3,4,5,6];
+
+function square(num){
+  
+  return num*num;
+}
+
+someNum.map(square);
+  
 
