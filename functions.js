@@ -98,3 +98,4 @@ var sum = adder(5, 10); //15
 
 var multiplier = operationMaker("mult");
 var product = multiplier(5, 10); // 50
+
