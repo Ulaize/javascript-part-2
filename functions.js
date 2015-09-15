@@ -45,5 +45,19 @@ function square(num){
 }
 
 someNum.map(square);
-  
+
+//Using .map I have created a formula that squares each number in a group of numbers.
+
+var housemates = [
+  { num: 26},
+  { num: 76 },
+  { num: 48 }
+
+];
+
+function squareAge (value,index) {
+  return value.num*value.num;
+};
+
+housemates.map(squareAge);
 
